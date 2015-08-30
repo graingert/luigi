@@ -176,7 +176,7 @@ class URLLibServerTestRun(ServerTestRun):
 
 
 @attr('unix')
-class UNIXServerTestRun(unittest.TestCase):
+class UNIXServerTestRun(ServerTestRun):
     server_client_class = UNIXServerClient
 
     def tearDown(self):
